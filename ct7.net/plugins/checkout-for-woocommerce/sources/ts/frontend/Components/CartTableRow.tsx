@@ -54,7 +54,7 @@ const CartTableRow = ( { item, updateItem }: CartTableRowProps ) => (
             ) }
 
             <div className="cfw_side_cart_item_after_data">
-                {!item.disable_cart_editing && (
+                {!item.disable_cart_editing && !item.has_quantity_override && (
                     <CartItemQuantityControl
                         quantity={item.quantity}
                         setQuantity={( newQuantity: number ) => {
@@ -71,21 +71,23 @@ const CartTableRow = ( { item, updateItem }: CartTableRowProps ) => (
                     <CartItemEditVariationLink item={item} />
                 ) }
 
-                {ReactHtmlParser( item.actions.cfw_side_cart_item_after_data ?? '' )}
+                {ReactHtmlParser( item.actions?.cfw_side_cart_item_after_data ?? '' )}
             </div>
         </th>
         <td className="cfw-cart-item-quantity visually-hidden">
             <Markup content={item.quantity.toString()} noWrap={true} />
         </td>
         <td className="cfw-cart-item-subtotal">
-            {ReactHtmlParser( item.actions.cfw_before_cart_item_subtotal ? item.actions.cfw_before_cart_item_subtotal : '' )}
+            {ReactHtmlParser( item.actions?.cfw_before_cart_item_subtotal ? item.actions?.cfw_before_cart_item_subtotal : '' )}
 
-            <CartItemRemoveButton
-                handleRemove={() => {
-                    const updatedItem = { ...item, quantity: 0 };
-                    updateItem( updatedItem );
-                }}
-            />
+            {!item.hide_remove_item
+                && <CartItemRemoveButton
+                    handleRemove={() => {
+                        const updatedItem = { ...item, quantity: 0 };
+                        updateItem( updatedItem );
+                    }}
+                />
+            }
 
             <Markup content={item.subtotal} noWrap={true} />
         </td>
