@@ -2,20 +2,26 @@
   "main_pixel": "array",
   "main_pixel_enabled": "checkbox",
   "is_enable_debug_mode": "array",
+  "server_container_url": "array",
   "pixel_lang": "array_v",
   "track_user_id": "checkbox",
-  "tracking_id": "array",
+  "gtm_id": "array",
 
-  "enable_server_container": "checkbox",
-  "first_party_collection": "checkbox",
-  "server_container_url": "array",
-  "transport_url": "array",
+  "gtm_dataLayer_name": "text",
+  "gtm_container_domain": "text",
+  "gtm_container_identifier": "text",
+  "gtm_auth": "text",
+  "gtm_preview": "text",
 
-  "url_passthrough": "checkbox",
-  "url_passthrough_filter": "checkbox",
+  "track_page_view": "checkbox",
+
   "send_user_provided_data": "checkbox",
-  "use_encoding_provided_data": "checkbox",
   "use_multiple_provided_data": "checkbox",
+
+  "gtm_just_data_layer": "checkbox",
+  "check_list": "radio",
+  "check_list_contain": "array",
+  "select_all_blacklist": "array",
 
   "hide_this_tag": "checkbox",
   "hide_this_tag_contain": "multi_select",
@@ -26,15 +32,6 @@
   "is_fire_signal": "checkbox",
   "is_fire_woo": "checkbox",
   "is_fire_edd": "checkbox",
-
-  "use_server_api": "checkbox",
-  "server_access_api_token": "array_v",
-
-  "cross_domain_enabled": "checkbox",
-  "cross_domain_accept_incoming": "checkbox",
-  "cross_domain_domains": "array",
-  "enable_anti_flicker": "checkbox",
-  "anti_flicker_timeout": "text",
 
   "woo_variable_as_simple": "checkbox",
   "woo_variable_data_select_product": "checkbox",
@@ -50,6 +47,7 @@
   "woo_FirstTimeBuyer_enabled": "checkbox",
   "woo_ReturningCustomer_enabled": "checkbox",
   "woo_purchase_enabled": "checkbox",
+  "woo_purchase_new_customer": "checkbox",
 
   "woo_initiate_checkout_enabled": "checkbox",
   "woo_initiate_checkout_progress_f_enabled": "checkbox",
@@ -75,6 +73,7 @@
   "edd_vip_client_enabled": "checkbox",
   "edd_big_whale_enabled": "checkbox",
   "edd_purchase_enabled": "checkbox",
+  "edd_purchase_new_customer": "checkbox",
   "edd_initiate_checkout_enabled": "checkbox",
   "edd_remove_from_cart_enabled": "checkbox",
   "edd_add_to_cart_enabled": "checkbox",
@@ -116,7 +115,6 @@
   "woo_view_item_list_track_name": "checkbox",
 
   "disable_noscript": "checkbox",
-  "custom_page_view_event": "checkbox",
 
-  "logs_enable": "checkbox"
+  "enable_remarketing_param" : "checkbox"
 }

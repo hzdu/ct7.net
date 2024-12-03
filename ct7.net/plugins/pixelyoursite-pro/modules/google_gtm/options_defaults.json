@@ -2,20 +2,26 @@
   "main_pixel": [],
   "main_pixel_enabled": true,
   "is_enable_debug_mode": "",
+  "server_container_url": "",
   "pixel_lang": "",
   "track_user_id": false,
-  "tracking_id": "",
+  "gtm_id": "",
 
-  "enable_server_container": false,
-  "first_party_collection": true,
-  "server_container_url": "",
-  "transport_url": "",
+  "gtm_dataLayer_name": "dataLayer",
+  "gtm_container_domain": "www.googletagmanager.com",
+  "gtm_container_identifier": "gtm",
+  "gtm_auth": "",
+  "gtm_preview": "",
 
-  "url_passthrough": true,
-  "url_passthrough_filter": true,
+  "track_page_view": false,
+
   "send_user_provided_data": true,
-  "use_encoding_provided_data": true,
   "use_multiple_provided_data": true,
+
+  "gtm_just_data_layer": false,
+  "check_list": "disabled",
+  "check_list_contain": [],
+  "select_all_blacklist": [],
 
   "hide_this_tag": false,
   "hide_this_tag_contain": [],
@@ -26,16 +32,6 @@
   "is_fire_signal": true,
   "is_fire_woo": true,
   "is_fire_edd": true,
-
-  "use_server_api": false,
-  "server_access_api_token": "",
-
-
-  "cross_domain_enabled": false,
-  "cross_domain_accept_incoming": false,
-  "cross_domain_domains": [],
-  "enable_anti_flicker": true,
-  "anti_flicker_timeout": 4000,
 
   "woo_variable_as_simple": true,
   "woo_variable_data_select_product": false,
@@ -51,6 +47,7 @@
   "woo_FirstTimeBuyer_enabled": true,
   "woo_ReturningCustomer_enabled": true,
   "woo_purchase_enabled": true,
+  "woo_purchase_new_customer": true,
   "woo_initiate_checkout_enabled": true,
   
   "woo_initiate_set_checkout_option_enabled": true,
@@ -78,6 +75,7 @@
   "edd_vip_client_enabled": true,
   "edd_big_whale_enabled": true,
   "edd_purchase_enabled": true,
+  "edd_purchase_new_customer": true,
   "edd_initiate_checkout_enabled": true,
   "edd_remove_from_cart_enabled": true,
   "edd_add_to_cart_enabled": true,
@@ -120,7 +118,6 @@
   "woo_view_item_list_track_name": false,
 
   "disable_noscript" : false,
-  "custom_page_view_event": false,
 
-  "logs_enable": false
+  "enable_remarketing_param" : true
 }
